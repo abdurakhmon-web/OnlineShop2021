@@ -280,3 +280,46 @@ footer .copyright a:hover{
     color: #fff;
     background-color: #fb774b;
 }
+
+/* Shop */
+
+#featured > div.row.mx-auto.container > nav > ul > li.page-item.active > a{
+    background-color: #000;
+}
+#featured > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover > a{
+    background-color: #fb774b;
+    color: #fff;
+}
+.pagination a{
+    color: #000;
+}
+
+/* Product info */
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.sproduct select{
+    display: block;
+    padding: 5px 10px;
+}
+.sproduct input{
+    width: 50px;
+    height: 46px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.sproduct input:focus{
+    outline: none;
+}
+.sproduct .buy-btn{
+    background: #fb774b;
+    opacity: 1;
+    transition: .3s all;
+}
