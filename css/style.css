@@ -351,3 +351,33 @@ footer .copyright a:hover{
     opacity: 1;
     transition: .3s all;
 }
+
+/* contact start */
+
+.contact-right{
+    font-size: 18px;
+    font-weight: 500;
+}
+.contact-inp input{
+    border: 1px solid #fb774b;
+    border-radius: 15px;
+    height: 45px;
+    padding: 0 10px;
+}
+.contact-text textarea{
+    border: 1px solid #fb774b;
+    border-radius: 15px;
+    padding: 10px;
+}
+.contact-right button{
+    border-radius: 15px;
+}
+.contact-left p i{
+    margin-right: 10px;
+}
+@media (max-width: 767px){
+    .contact-left{
+        height: 500px;
+        margin-bottom: 100px;
+    }
+}
