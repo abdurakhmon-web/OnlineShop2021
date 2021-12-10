@@ -45,6 +45,33 @@ button{
 button:hover{
     background-color: #3a3833;
 }
+
+/* scroll top */
+
+.scroll-top {
+    background: #fb774b;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    padding-top: 7px;
+    bottom: 20px;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    border-radius: 50%;
+    right: 20px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 9999;
+    opacity: 0.5;
+}
+.scroll-top:hover{
+    opacity: 1;
+    transition: 300ms;
+}
+.scroll-top .fa-chevron-up{
+    color: #F1F1F1;
+}
+
+/* scroll top end */
 .navbar{
     font-size: 16px;
     top: 0;
