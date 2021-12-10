@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,6 +68,7 @@
                         <li class="nav-item">
                             <i class="fal fa-search"></i>
                             <i class="fal fa-shopping-bag"></i>
+                            <i class="far fa-user" data-bs-toggle="modal" data-bs-target="#login"></i>
                         </li>
                     </ul>
                 </div>
@@ -82,7 +86,7 @@
     <section class="sproduct my-5 pt-5">
         <div class="container">
             <div class="row mt-5">
-                <div class="col-lg-5 col-12">
+                <div class="col-lg-5 col-12" data-aos="fade-down" data-aos-delay="400">
                     <img class="img-fluid w-100 pb-1" id="MainImg" src="./img/shop/1.jpg" alt="">
                     <div class="small-img-group">
                         <div class="small-img-col">
@@ -99,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12">
+                <div class="col-lg-6 col-12" data-aos="fade-down" data-aos-delay="450">
                     <h6 class="py-3 py-lg-0">Home / T-Shirt</h6>
                     <h3 class="py-4">Men's Fashion T Shirt</h3>
                     <h2>$139.00</h2>
@@ -129,11 +133,11 @@
 
     <section id="featured" class="my-5 pb-5">
         <div class="container text-center mt-5 py-5">
-            <h3>Related Products</h3>
+            <h3 data-aos="zoom-in">Related Products</h3>
             <hr class="mx-auto">
         </div>
         <div class="row mx-auto container-fluid">
-            <div class="product text-center col-lg-3 col-md-4 col-12">
+            <div class="product text-center col-lg-3 col-md-4 col-12" data-aos="fade-down" data-aos-delay="300">
                 <img class="img-fluid mb-3" src="./img/featured/1.jpg" alt="">
                 <div class="star">
                     <i class="fas fa-star"></i>
@@ -146,7 +150,7 @@
                 <h4 class="p-price">$92.00</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
+            <div class="product text-center col-lg-3 col-md-4 col-12" data-aos="fade-down" data-aos-delay="350">
                 <img class="img-fluid mb-3" src="./img/featured/2.jpg" alt="">
                 <div class="star">
                     <i class="fas fa-star"></i>
@@ -159,7 +163,7 @@
                 <h4 class="p-price">$92.00</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
+            <div class="product text-center col-lg-3 col-md-4 col-12" data-aos="fade-down" data-aos-delay="400">
                 <img class="img-fluid mb-3" src="./img/featured/3.jpg" alt="">
                 <div class="star">
                     <i class="fas fa-star"></i>
@@ -172,7 +176,7 @@
                 <h4 class="p-price">$92.00</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
+            <div class="product text-center col-lg-3 col-md-4 col-12" data-aos="fade-down" data-aos-delay="450">
                 <img class="img-fluid mb-3" src="./img/featured/4.jpg" alt="">
                 <div class="star">
                     <i class="fas fa-star"></i>
@@ -264,7 +268,83 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
+
+<!-- Modal-login -->
+
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+        <div class="modal-body">
+          <div class="top-modal">
+            <img src="./img/modal-user.svg" alt="">
+            <div class="modal-name">Login to your account</div>
+          </div>
+          <div class="form">
+            <form action="" method="post">
+              <div class="inpb">
+                <input class="phone" name="" type="text" placeholder="Telephone">
+              </div>
+              <div class="inpb">
+                <input class="pass" name="" type="password" placeholder="Password">
+              </div>
+              <div class="forgot-pass">Forgot your password?</div>
+              <button>Login</button>
+            </form>
+            <div class="modal-txt" data-bs-toggle="modal" data-bs-target="#register">
+              First time with us? <span>
+                Register now</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal-registr -->
+  
+  <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+        <div class="modal-body">
+          <div class="top-modal">
+            <img src="./img/modal-user.svg" alt="">
+            <div class="modal-name">Registration</div>
+          </div>
+          <div class="form">
+            <form action="" method="post">
+              <div class="inpb">
+                <input class="phone" name="" type="text" placeholder="Telephone">
+              </div>
+              <div class="inpb">
+                <input class="pass" name="" type="password" placeholder="Password">
+              </div>
+              <div class="inpb">
+                <input class="pass" name="" type="password" placeholder="Confirm password">
+              </div>
+              <div class="check-block">
+                <div class="line">
+                  <input type="checkbox" id="r-mail">
+                  <label for="r-mail">I want to receive great deals from the store</label>
+                </div>
+                <div class="line">
+                  <input type="checkbox" checked id="r-pol">
+                  <label for="r-pol">I accept the terms <a href="">User Agreement</a>, <a href="">Privacy policy</a></label>
+                </div>
+              </div>
+              <button>Register now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

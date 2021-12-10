@@ -381,3 +381,164 @@ footer .copyright a:hover{
         margin-bottom: 100px;
     }
 }
+
+/* Modal  */
+
+.modal-dialog {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 17.7465px rgba(0, 0, 0, 0.12);
+    border-radius: 17.4636px;
+    width: 358px;
+  }
+  .modal-dialog.modal-big {
+    max-width: 654px;
+    width: 654px;
+  }
+  .modal-dialog.modal-big .modal-content {
+    padding: 40px 56px 27px;
+  }
+  .modal-dialog.modal-big .modal-content .booking-top {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 3px;
+  }
+  .modal-dialog.modal-big .modal-content .form .inpb.d-flex input {
+    width: 253px;
+  }
+  .modal-dialog.modal-big .modal-content .form .inpb input {
+    padding-left: 17px;
+    font-size: 14px;
+  }
+  .modal-dialog.modal-big .modal-content .form button {
+    height: 52px;
+    line-height: 52px;
+    font-size: 17px;
+  }
+  .modal-dialog .modal-content {
+    border: none;
+    padding: 30px 42px 34px;
+    position: relative;
+  }
+  .modal-dialog .modal-content .modal-body {
+    padding: 0;
+  }
+  .modal-dialog .modal-content .btn-close {
+    background: none;
+    padding: 0;
+    font-size: 20px;
+    color: #000000;
+    position: absolute;
+    right: 35px;
+    top: 20px;
+  }
+  .modal-dialog .modal-content .top-modal {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .modal-dialog .modal-content .top-modal .modal-name {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    margin-top: 13px;
+  }
+  .modal-dialog .modal-content .form button {
+    border: none;
+    height: 45px;
+    background: #fb774b;
+    border-radius: 6px;
+    padding: 0 20px;
+    min-width: 143px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 45px;
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    margin: 12px auto;
+  }
+  .modal-dialog .modal-content .form .modal-txt {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    margin-top: 12px;
+  }
+  .modal-dialog .modal-content .form .modal-txt span {
+    color: #00AC4E;
+    cursor: pointer;
+  }
+  .modal-dialog .modal-content .form .forgot-pass {
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: underline;
+    color: #fb774b;
+    text-align: center;
+    cursor: pointer;
+  }
+  .modal-dialog .modal-content .form .inpb input {
+    width: 100%;
+    height: 50px;
+    background: #FCFCFC;
+    border: 1px solid #EBEBEB;
+    border-radius: 6px;
+    padding: 0 20px 0 49px;
+    font-size: 13px;
+    line-height: 50px;
+    color: #C6C6C6;
+    text-align: left;
+    margin: 14px 0;
+    background-repeat: no-repeat;
+    background-position: 18px center;
+  }
+  .modal-dialog .modal-content .form .inpb input.phone {
+    background-image: url(../img/modal-tel.svg);
+  }
+  .modal-dialog .modal-content .form .inpb input.pass {
+    background-image: url(../img/modal-key.svg);
+  }
+
+  .modal-dialog .modal-content .form .check-block {
+    margin-bottom: 38px;
+  }
+  .modal-dialog .modal-content .form .check-block .line {
+    display: flex;
+    font-size: 11px;
+    line-height: 14px;
+    color: #C6C6C6;
+    margin-bottom: 15px;
+  }
+  .modal-dialog .modal-content .form .check-block .line input {
+    position: relative;
+    display: none;
+  }
+  .modal-dialog .modal-content .form .check-block .line input:checked ~ label:before {
+    background: #00AC4E;
+    border: 2px solid #EBEBEB;
+  }
+  .modal-dialog .modal-content .form .check-block .line input ~ label {
+    margin-left: 30px;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .modal-dialog .modal-content .form .check-block .line input ~ label a {
+    color: #00AC4E;
+    text-decoration: none;
+  }
+  .modal-dialog .modal-content .form .check-block .line input ~ label:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #FCFCFC;
+    border: 2px solid #EBEBEB;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: -30px;
+  }
