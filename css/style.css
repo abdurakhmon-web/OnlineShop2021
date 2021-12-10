@@ -388,7 +388,6 @@ footer .copyright a:hover{
     background: #FFFFFF;
     box-shadow: 0px 0px 17.7465px rgba(0, 0, 0, 0.12);
     border-radius: 17.4636px;
-    width: 358px;
   }
   .modal-dialog.modal-big {
     max-width: 654px;
@@ -490,7 +489,7 @@ footer .copyright a:hover{
     padding: 0 20px 0 49px;
     font-size: 13px;
     line-height: 50px;
-    color: #C6C6C6;
+    color: #000;
     text-align: left;
     margin: 14px 0;
     background-repeat: no-repeat;
@@ -501,6 +500,10 @@ footer .copyright a:hover{
   }
   .modal-dialog .modal-content .form .inpb input.pass {
     background-image: url(../img/modal-key.svg);
+  }
+  .modal-dialog .modal-content .form .inpb input.search {
+    background-image: url(../img/search.png);
+    margin-top: 20px;
   }
 
   .modal-dialog .modal-content .form .check-block {

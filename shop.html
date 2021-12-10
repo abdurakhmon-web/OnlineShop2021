@@ -13,7 +13,7 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    
+
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -74,7 +74,7 @@
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <i class="fal fa-search"></i>
+                            <i class="fal fa-search" data-bs-toggle="modal" data-bs-target="#search"></i>
                             <i class="fal fa-shopping-bag"></i>
                             <i class="far fa-user" data-bs-toggle="modal" data-bs-target="#login"></i>
                         </li>
@@ -95,10 +95,12 @@
         <div class="container mt-5 py-5">
             <h2 class="font-weight-bold" data-aos="zoom-in">Our Featured</h2>
             <hr>
-            <p data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500">Here you can check out our new products with fair price on rymo.</p>
+            <p data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500">Here you can check out our new products
+                with fair price on rymo.</p>
         </div>
         <div class="row mx-auto container">
-            <div onclick="window.location.href='product-info.html'" class="product text-center col-lg-3 col-md-6 col-12" data-aos="fade-down" data-aos-delay="300">
+            <div onclick="window.location.href='product-info.html'" class="product text-center col-lg-3 col-md-6 col-12"
+                data-aos="fade-down" data-aos-delay="300">
                 <img class="img-fluid mb-3" src="./img/shop/1.jpg" alt="">
                 <div class="star">
                     <i class="fas fa-star"></i>
@@ -483,70 +485,93 @@
 
 <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
-        <div class="modal-body">
-          <div class="top-modal">
-            <img src="./img/modal-user.svg" alt="">
-            <div class="modal-name">Login to your account</div>
-          </div>
-          <div class="form">
-            <form action="" method="post">
-              <div class="inpb">
-                <input class="phone" name="" type="text" placeholder="Telephone">
-              </div>
-              <div class="inpb">
-                <input class="pass" name="" type="password" placeholder="Password">
-              </div>
-              <div class="forgot-pass">Forgot your password?</div>
-              <button>Login</button>
-            </form>
-            <div class="modal-txt" data-bs-toggle="modal" data-bs-target="#register">
-              First time with us? <span>
-                Register now</span> 
+        <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                    class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <div class="top-modal">
+                    <img src="./img/modal-user.svg" alt="">
+                    <div class="modal-name">Login to your account</div>
+                </div>
+                <div class="form">
+                    <form action="" method="post">
+                        <div class="inpb">
+                            <input class="phone" name="" type="text" placeholder="Telephone">
+                        </div>
+                        <div class="inpb">
+                            <input class="pass" name="" type="password" placeholder="Password">
+                        </div>
+                        <div class="forgot-pass">Forgot your password?</div>
+                        <button>Login</button>
+                    </form>
+                    <div class="modal-txt" data-bs-toggle="modal" data-bs-target="#register">
+                        First time with us? <span>
+                            Register now</span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  
-  <!-- Modal-registr -->
-  
-  <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+</div>
+
+<!-- Modal-registr -->
+
+<div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
-        <div class="modal-body">
-          <div class="top-modal">
-            <img src="./img/modal-user.svg" alt="">
-            <div class="modal-name">Registration</div>
-          </div>
-          <div class="form">
-            <form action="" method="post">
-              <div class="inpb">
-                <input class="phone" name="" type="text" placeholder="Telephone">
-              </div>
-              <div class="inpb">
-                <input class="pass" name="" type="password" placeholder="Password">
-              </div>
-              <div class="inpb">
-                <input class="pass" name="" type="password" placeholder="Confirm password">
-              </div>
-              <div class="check-block">
-                <div class="line">
-                  <input type="checkbox" id="r-mail">
-                  <label for="r-mail">I want to receive great deals from the store</label>
+        <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                    class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <div class="top-modal">
+                    <img src="./img/modal-user.svg" alt="">
+                    <div class="modal-name">Registration</div>
                 </div>
-                <div class="line">
-                  <input type="checkbox" checked id="r-pol">
-                  <label for="r-pol">I accept the terms <a href="">User Agreement</a>, <a href="">Privacy policy</a></label>
+                <div class="form">
+                    <form action="" method="post">
+                        <div class="inpb">
+                            <input class="phone" name="" type="text" placeholder="Telephone">
+                        </div>
+                        <div class="inpb">
+                            <input class="pass" name="" type="password" placeholder="Password">
+                        </div>
+                        <div class="inpb">
+                            <input class="pass" name="" type="password" placeholder="Confirm password">
+                        </div>
+                        <div class="check-block">
+                            <div class="line">
+                                <input type="checkbox" id="r-mail">
+                                <label for="r-mail">I want to receive great deals from the store</label>
+                            </div>
+                            <div class="line">
+                                <input type="checkbox" checked id="r-pol">
+                                <label for="r-pol">I accept the terms <a href="">User Agreement</a>, <a href="">Privacy
+                                        policy</a></label>
+                            </div>
+                        </div>
+                        <button>Register now</button>
+                    </form>
                 </div>
-              </div>
-              <button>Register now</button>
-            </form>
-          </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
+
+<!-- Modal-search -->
+
+<div class="modal fade" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                    class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <div class="form">
+                    <form action="" method="post">
+                        <div class="inpb">
+                            <input class="search" name="" type="search" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
