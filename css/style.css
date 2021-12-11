@@ -495,8 +495,8 @@ footer .copyright a:hover{
     background-repeat: no-repeat;
     background-position: 18px center;
   }
-  .modal-dialog .modal-content .form .inpb input.phone {
-    background-image: url(../img/modal-tel.svg);
+  .modal-dialog .modal-content .form .inpb input.email {
+    background-image: url(../img/mail.png);
   }
   .modal-dialog .modal-content .form .inpb input.pass {
     background-image: url(../img/modal-key.svg);
