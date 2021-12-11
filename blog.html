@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact US</title>
+    <title>Blog</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -57,13 +57,13 @@
                             <a class="nav-link" href="shop.html">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
+                            <a class="nav-link active" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact Us</a>
+                            <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
                         <li class="nav-item">
                             <i class="fal fa-search" data-bs-toggle="modal" data-bs-target="#search"></i>
@@ -81,45 +81,76 @@
 
     <!-- HEADER END -->
 
-    <!-- SECTION CONTACT START -->
+    <!-- SECTION BLOG-HOME START -->
 
-    <section id="contact" class="my-5 py-5">
-        <div class="container text-center mt-5 py-5">
-            <h2 class="font-weight-bold" data-aos="zoom-in">Contact US</h2>
-            <hr class="mx-auto">
-            <p data-aos="fade-down" data-aos-easing="ease" data-aos-delay="350">Here you can check out our new products
-                with fair price on rymo.</p>
-        </div>
-        <div class="row mx-auto container">
-            <div class="contact-left col-lg-6 col-12" data-aos="fade-down" data-aos-delay="350">
-                <p><i class="fas fa-map-marker-alt"></i> Binghamton, New York</p>
-                <p><i class="fas fa-phone-alt"></i>(123) 456-7890</p>
-                <p><i class="fas fa-at"></i>MAIL@EXAMPLE.COM</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386857.40193889936!2d-74.20082217348306!3d40.75491010167875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2s!4v1639138723910!5m2!1sru!2s"
-                    width="100%" height="458" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <section id="blog-home" class="container pt-5 mt-5" data-aos="fade-down" data-aos-delay="300">
+        <h2 class="font-weight-bold pt-5">Blogs</h2>
+        <hr>
+    </section>
+
+    <!-- SECTION BLOG-HOME END -->
+
+    <!-- SECTION BLOG-CONTAINER START -->
+
+    <section id="blog-container" class="container pt-5">
+        <div class="row">
+            <div class="post text-center col-lg-6 col-md-6 col-12 pb-5" data-aos="fade-down" data-aos-delay="350">
+                <div class="post-img">
+                    <img class="img-fluid w-100" src="./img/blog/1.jpg" alt="">
+                </div>
+                <h3 class="font-weight-normal pt-3">The best ways to change your summer wardrobe into autumn wardrobe.</h3>
+                <p>Jan 11, 2021</p>
             </div>
-            <div class="contact-right col-lg-6 col-12" data-aos="fade-down" data-aos-delay="400">
-                <form action="">
-                    <div class="contact-inp mb-3 d-flex flex-column">
-                        <label for="">Name</label>
-                        <input type="text" required>
-                    </div>
-                    <div class="contact-inp mb-3 d-flex flex-column">
-                        <label for="">E-mail</label>
-                        <input type="email" required>
-                    </div>
-                    <div class="contact-text mb-3 d-flex flex-column">
-                        <label for="">Your message</label>
-                        <textarea rows="10" required></textarea>
-                    </div>
-                    <button type="submit">Send</button>
-                </form>
+            <div class="post text-center col-lg-6 col-md-6 col-12 pb-5" data-aos="fade-down" data-aos-delay="400">
+                <div class="post-img">
+                    <img class="img-fluid w-100" src="./img/blog/2.jpg" alt="">
+                </div>
+                <h3 class="font-weight-normal pt-3">Men's fashion in leather</h3>
+                <p>Jan 11, 2021</p>
+            </div>
+            <div class="post text-center col-lg-6 col-md-6 col-12 pb-5" data-aos="fade-down" data-aos-delay="450">
+                <div class="post-img">
+                    <img class="img-fluid w-100" src="./img/blog/3.jpg" alt="">
+                </div>
+                <h3 class="font-weight-normal pt-3">DIYer and TV host Trisha Hershberger's journey through gaming keeps evolving.</h3>
+                <p>Jan 11, 2021</p>
+            </div>
+            <div class="post text-center col-lg-6 col-md-6 col-12 pb-5" data-aos="fade-down" data-aos-delay="500">
+                <div class="post-img">
+                    <img class="img-fluid w-100" src="./img/blog/4.jpg" alt="">
+                </div>
+                <h3 class="font-weight-normal pt-3">The best ways to change your summer wardrobe into autumn wardrobe.</h3>
+                <p>Jan 11, 2021</p>
+            </div>
+            <!-- BANNER -->
+            <div class="col-12 pb-5" data-aos="fade-down" data-aos-delay="350">
+                <div class="post-img">
+                    <img class="img-fluid w-100" src="./img/blog/banner.webp" alt="">
+                </div>
+            </div>
+            <!-- BOTTOM BLOG -->
+            <div class="post col-lg-4 col-md-6 col-12 pb-5" data-aos="fade-down" data-aos-delay="350">
+                <div class="post-img">
+                    <img class="img-fluid w-100" src="./img/blog/1.webp" alt="">
+                </div>
+                <h4 class="font-weight-normal pt-3">The best ways to change your summer wardrobe into autumn wardrobe.</h4>
+            </div>
+            <div class="post col-lg-4 col-md-6 col-12 pb-5" data-aos="fade-down" data-aos-delay="400">
+                <div class="post-img">
+                    <img class="img-fluid w-100" src="./img/blog/2.webp" alt="">
+                </div>
+                <h4 class="font-weight-normal pt-3">The best ways to change your summer wardrobe into autumn wardrobe.</h4>
+            </div>
+            <div class="post col-lg-4 col-md-6 col-12 pb-5" data-aos="fade-down" data-aos-delay="450">
+                <div class="post-img">
+                    <img class="img-fluid w-100" src="./img/blog/3.webp" alt="">
+                </div>
+                <h4 class="font-weight-normal pt-3">The best ways to change your summer wardrobe into autumn wardrobe.</h4>
             </div>
         </div>
     </section>
 
-    <!-- SECTION CONTACT END -->
+    <!-- SECTION BLOG-CONTAINER END -->
 
     <!-- FOOTER START -->
 
