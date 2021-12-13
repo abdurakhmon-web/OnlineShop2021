@@ -17,6 +17,9 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
     <!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,7 +90,9 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-lg-5 col-12" data-aos="fade-down" data-aos-delay="400">
-                    <img class="img-fluid w-100 pb-1" id="MainImg" src="./img/shop/1.jpg" alt="">
+                    <!--  <a data-fancybox="single" href="./img/shop/1.jpg">
+                        <img class="img-fluid w-100 pb-1" id="MainImg" src="./img/shop/1.jpg" alt="">
+                    </a>
                     <div class="small-img-group">
                         <div class="small-img-col">
                             <img class="small-img w-100" src="./img/shop/1.jpg" alt="">
@@ -101,8 +106,37 @@
                         <div class="small-img-col">
                             <img class="small-img w-100" src="./img/shop/26.jpg" alt="">
                         </div>
+                    </div> -->
+                    <div id="mainCarousel" class="carousel w-10/12 max-w-5xl mx-auto">
+                        <div class="carousel__slide" data-src="./img/shop/1.jpg" data-fancybox="gallery">
+                            <img src="img/shop/1.jpg" />
+                        </div>
+                        <div class="carousel__slide" data-src="./img/shop/24.jpg" data-fancybox="gallery">
+                            <img src="./img/shop/24.jpg" />
+                        </div>
+                        <div class="carousel__slide" data-src="./img/shop/25.jpg" data-fancybox="gallery">
+                            <img src="./img/shop/25.jpg" />
+                        </div>
+                        <div class="carousel__slide" data-src="./img/shop/26.jpg" data-fancybox="gallery">
+                            <img src="./img/shop/26.jpg" />
+                        </div>
+                    </div>
+                    <div id="thumbCarousel" class="carousel max-w-xl mx-auto">
+                        <div class="carousel__slide">
+                            <img class="panzoom__content" src="./img/shop/1.jpg" />
+                        </div>
+                        <div class="carousel__slide">
+                            <img class="panzoom__content" src="./img/shop/24.jpg" />
+                        </div>
+                        <div class="carousel__slide">
+                            <img class="panzoom__content" src="./img/shop/25.jpg" />
+                        </div>
+                        <div class="carousel__slide">
+                            <img class="panzoom__content" src="./img/shop/26.jpg" />
+                        </div>
                     </div>
                 </div>
+
                 <div class="col-lg-6 col-12" data-aos="fade-down" data-aos-delay="450">
                     <h6 class="py-3 py-lg-0">Home / T-Shirt</h6>
                     <h3 class="py-4">Men's Fashion T Shirt</h3>
@@ -269,6 +303,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/script.js"></script>
     <script>
         AOS.init();

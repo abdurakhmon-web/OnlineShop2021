@@ -12,7 +12,38 @@ $('.scroll-top').click(function () {
     return false;
 });
 
-var MainImg = document.getElementById("MainImg");
+// Initialise Carousel
+const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
+    Dots: false,
+  });
+  
+  // Thumbnails
+  const thumbCarousel = new Carousel(document.querySelector("#thumbCarousel"), {
+    Sync: {
+      target: mainCarousel,
+      friction: 0,
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: false,
+  });
+  
+  // Customize Fancybox
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    Carousel: {
+      on: {
+        change: (that) => {
+          mainCarousel.slideTo(mainCarousel.findPageForSlide(that.page), {
+            friction: 0,
+          });
+        },
+      },
+    },
+  });
+
+/* var MainImg = document.getElementById("MainImg");
 var smallimg = document.getElementsByClassName("small-img");
 
 smallimg[0].onclick = function () {
@@ -26,4 +57,4 @@ smallimg[2].onclick = function () {
 }
 smallimg[3].onclick = function () {
     MainImg.src = smallimg[3].src;
-}
+} */
