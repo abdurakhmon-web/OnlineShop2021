@@ -54,6 +54,9 @@ button {
 button:hover {
     background-color: #3a3833;
 }
+label{
+    margin-bottom: 0;
+}
 
 /* scroll top */
 
@@ -157,7 +160,6 @@ button:hover {
 .bar4 {
     bottom: 0;
 }
-
 .checkbox1:checked+label>.hamburger1>.bar1 {
     transform: rotate(45deg);
     transform-origin: 5%;
